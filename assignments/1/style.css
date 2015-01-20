@@ -2,6 +2,8 @@
 
 /* ATEC 3361 Assignment 1 */
 
+/* Basic Element Styling */
+
 body {
   color: #777;
   font-size: 100%;
@@ -9,6 +11,19 @@ body {
   
   background-color: #E86828;
   cursor: default;
+}
+
+a, a:link, a:visited,
+a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Font Awesome */
+
+i.fa {
+  color: inherit;
+  margin-right: 10px;
 }
 
 /* Header */
@@ -60,10 +75,10 @@ figure img {
   width: 100%;
 }
 
-/* Basic Element Styling */
+/* Footer */
 
-a, a:link, a:visited,
-a:hover, a:active {
-  color: inherit;
-  text-decoration: none;
+footer p {
+  text-align: center;
+  padding: 20px;
+  color: white;
 }
