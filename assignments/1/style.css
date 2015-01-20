@@ -1,16 +1,17 @@
 @charset "UTF-8";
 
-/* Basic styling for Assignment 1 */
+/* ATEC 3361 Assignment 1 */
 
 body {
   color: #777;
   font-size: 100%;
   font-family: 'Lato';
-
+  
   background-color: #E86828;
-
   cursor: default;
 }
+
+/* Header */
 
 header {
   padding: 20px;
@@ -26,6 +27,13 @@ header h2 {
   padding-top: 5px;
   font-size: 1.2em;
 }
+
+span.author-by {
+  margin-right: 2px;
+  color: #999;
+}
+
+/* Main Content */
 
 article {
   background-color: #F3C22D;
@@ -44,17 +52,18 @@ figcaption {
   text-align: center;
 }
 
-video {
+figure video {
   width: 100%;
 }
+
+figure img {
+  width: 100%;
+}
+
+/* Basic Element Styling */
 
 a, a:link, a:visited,
 a:hover, a:active {
   color: inherit;
   text-decoration: none;
-}
-
-span.author-by {
-  margin-right: 2px;
-  color: #999;
 }
