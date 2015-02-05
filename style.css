@@ -6,9 +6,15 @@ body {
   color: #777;
   font-size: 100%;
   font-family: 'Lato';
+  box-sizing: border-box;
   
   background-color: #E86828;
   cursor: default;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
 }
 
 a, a:link, a:visited,
@@ -94,4 +100,28 @@ footer p {
   text-align: center;
   padding: 20px;
   color: white;
+}
+
+/* "The Grid" */
+
+.example-1 {
+  padding-top: 50px;
+}
+
+.one-third {
+  float: left;
+  width: 33.33333333%;
+  box-sizing: border-box;
+}
+
+.one-third div:hover {
+  background: #eeeeee;
+  color: #E86828;
+}
+
+.one-third div {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  text-align: center;
 }
