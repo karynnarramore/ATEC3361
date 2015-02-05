@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Basic Element Styling */
+
+body {
+  color: #777;
+  font-size: 100%;
+  font-family: 'Lato';
+  
+  background-color: #E86828;
+  cursor: default;
+}
+
+a, a:link, a:visited,
+a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Font Awesome */
+
+i.fa {
+  margin-right: 10px;
+}
+
+/* Header */
+
+header {
+  padding: 20px;
+  background-color: #F2EA64;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #E86828;
+}
+
+header h2 {
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+
+span.author-by {
+  margin-right: 2px;
+  color: #999;
+}
+
+/* Main Content */
+
+article {
+  padding: 30px;
+  background-color: #F3C22D;
+}
+
+article h2 {
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  color: #E86828;
+}
+
+article ul {
+  margin-left: 15px;
+}
+
+article ul li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+figure {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+}
+
+figcaption {
+  padding: 20px;
+  color: #E86828;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+figure video {
+  width: 100%;
+}
+
+figure img {
+  width: 100%;
+}
+
+/* Footer */
+
+footer p {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
