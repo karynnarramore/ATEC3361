@@ -1,18 +1,18 @@
 <footer>
-  {% if site.github_repo_uri %}
-  <section>
-    <p><a href="//github.com/{{ site.github_repo_uri }}"><i class="fa fa-github"></i>View Source</a></p>
-  </section>
-  {% endif %}
-
-  <section>
-    <h2>ATEC 3361 Resources</h2>
-    <h3 class="byline">
-      <aside>By</aside><a href="//github.com/colin-c" target="_blank">Colin Campbell</a>
-    </h3>
-
-    {% if site.description %}
-    <p>{{ site.description }}</p>
+  <div class="container">
+    {% if site.github_repo_uri %}
+    <section>
+      <p><a href="//github.com/{{ site.github_repo_uri }}"><i class="fa fa-github"></i>View Source</a></p>
+    </section>
     {% endif %}
-  </section>
+
+    <section>
+      <h2>ATEC 3361 Resources</h2>
+      <h3 class="byline">By <a href="//github.com/colin-c" target="_blank">Colin Campbell</a></h3>
+
+      {% if site.description %}
+      <p>{{ site.description }}</p>
+      {% endif %}
+    </section>
+  </div>
 </footer>
