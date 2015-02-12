@@ -1,0 +1,12 @@
+
+// Global Site Styles
+
+body {
+  //
+}
+
+header,
+body > section,
+footer {
+  @extend .container;
+}
