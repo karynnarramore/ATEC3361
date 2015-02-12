@@ -18,7 +18,9 @@ header > .container {
 }
 
 // Main content
-body > section > .container {
+body > section {
+  @extend .container;
+
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -26,7 +28,7 @@ body > section > .container {
 // Footer
 footer {
   background-color: $lightGrey;
-  
+
   padding-bottom: 20px;
 }
 

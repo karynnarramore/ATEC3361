@@ -34,7 +34,7 @@
 }
 
 #box-model-demo .example {
-  @extend .container;
+  @extend .clearfix;
 
   margin-bottom: 60px;
 
@@ -52,7 +52,7 @@
 }
 
 #box-model-demo .three-columns {
-  @extend .container;
+  @extend .clearfix;
 
   margin-bottom: 60px;
 }
