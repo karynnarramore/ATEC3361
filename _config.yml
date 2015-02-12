@@ -3,7 +3,7 @@ title: ATEC3361 Resources
 email: colin@colincampbell.me
 description: > # this means to ignore newlines until "baseurl:"
   Resources for Internet Studio I
-baseurl: "/ATEC3361/" # the subpath of your site, e.g. /blog/
+baseurl: "/ATEC3361" # the subpath of your site, e.g. /blog/
 url: "https://colin-c.github.io" # the base hostname & protocol for your site
 twitter_username: xiroxas
 github_repo_uri: colin-c/ATEC3361
