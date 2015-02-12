@@ -50,6 +50,13 @@ p {
   padding-right: 5px;
 }
 
+// Main content
+body > section > .container {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+// Footer
 footer {
   background-color: $lightGrey;
 }

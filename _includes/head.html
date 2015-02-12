@@ -6,10 +6,10 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="shortcut icon" href="{{ "/shinobu.ico" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" href="{{ "/shinobu.ico" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
