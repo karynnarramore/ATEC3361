@@ -2,6 +2,16 @@
 @import "global-variables";
 @import "type";
 
+hr.dotted {
+  background-color: transparent;
+  border-top: 1px dotted #bbb;
+}
+
+// Code
+code.standalone {
+  border: 1px solid #CCC;
+}
+
 // Header
 header > .container {
   border-bottom: 1px solid $lightGrey;
@@ -9,7 +19,7 @@ header > .container {
 
 // Main content
 body > section > .container {
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 

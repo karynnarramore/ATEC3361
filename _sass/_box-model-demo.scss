@@ -1,0 +1,80 @@
+#box-model-demo .margin {
+  border: 2px dotted #aaa;
+  padding: 15px;
+}
+
+#box-model-demo .box {
+  text-align: center;
+
+  border: 15px solid #bbb;
+  border-radius: 3px;
+  padding: 15px;
+  background: #ccc;
+
+  .content {
+    background: $lightGrey;
+  }
+
+  .content p {
+    margin-bottom: 0;
+  }
+
+  pre {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+#box-model-demo .content-box-ex .content {
+  border: 2px solid red;
+}
+
+#box-model-demo .border-box-ex {
+  border: 15px solid red;
+}
+
+#box-model-demo .example {
+  @extend .container;
+
+  margin-bottom: 60px;
+
+  & > * {
+    @extend .col-sm-6;
+  }
+
+  & > article {
+    @extend .col-md-5;
+  }
+
+  & > aside {
+    @extend .col-md-7;
+  }
+}
+
+#box-model-demo .three-columns {
+  @extend .container;
+
+  margin-bottom: 60px;
+}
+
+.column {
+  @extend .col-xs-4;
+
+  text-align: center;
+  background: #ddd;
+  padding: 5px;
+
+  .content {
+    background: #eee;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  p { margin-bottom: 0; }
+}
+
+.content-box, .content-box * {
+  @include box-sizing(content-box);
+}

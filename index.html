@@ -2,4 +2,101 @@
 layout: default
 ---
 
-<!-- CSS Box Model Demo -->
+<section id="box-model-demo">
+
+  <div class="well">
+    <p>The Box Model is the model that browsers use to apply CSS to your HTML markup.</p>
+    <p>You can think of it as literally a box a that wraps around each element, and it's made of <strong>content, padding, border, and margin</strong>.</p>
+  </div><!-- .well -->
+
+  <div class="example">
+    <article>
+      <div class="margin">
+        <div class="box content-box-ex">
+          <div class="content">
+            <pre><code class="language-css">{ box-sizing: content-box; }</code></pre>
+            <p>This is the default</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <aside>
+      <p>By default, browsers calulate the width of an element to <strong>include</strong></p>
+      <ul>
+        <li>Content</li>
+      </ul>
+      <p>The following properties of the element are <strong>not</strong> considered part of width</p>
+      <ul>
+        <li>Padding</li>
+        <li>Border</li>
+        <li>Margin</li>
+      </ul>
+    </aside>
+  </div><!-- .example -->
+
+  <div class="well">
+    <p>This makes it difficult to work with multi-column layouts, as you've probably noticed if you've ever tried to approach the <em>three column problem</em></p>
+  </div><!-- .well -->
+
+  <div class="three-columns content-box">
+    <div class="column">
+      <div class="content"><p>One</p></div>
+    </div>
+    <div class="column">
+      <div class="content"><p>Two</p></div>
+    </div>
+    <div class="column">
+      <div class="content"><p>Three</p></div>
+    </div>
+  </div><!-- .example -->
+
+  <div class="well">
+    <p>However, there are alternate ways to calulate the width of an element.</p>
+  </div><!-- .well -->
+
+  <div class="example">
+    <article>
+      <div class="margin">
+        <div class="box border-box-ex">
+          <div class="content">
+            <pre><code class="language-css">{ box-sizing: border-box; }</code></pre>
+            <p>Bootstrap uses this</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <aside>
+      <p>Setting the box sizing mode to <code class="standalone language-css">border-box</code> causes the browser to <strong>include</strong></p>
+      <ul>
+        <li>Content</li>
+        <li>Padding</li>
+        <li>Border</li>
+      </ul>
+      <p>This way of doing the calculation often makes more sense to people, as it leaves the only property that is visually outside of the box out of the calulation</p>
+      <ul>
+        <li>Margin</li>
+      </ul>
+    </aside>
+  </div><!-- .example -->
+
+  <div class="well">
+    <p>Now if we approach the same problem, we get much better results</p>
+  </div><!-- .well -->
+
+  <div class="three-columns">
+    <div class="column">
+      <div class="content"><p>One</p></div>
+    </div>
+    <div class="column">
+      <div class="content"><p>Two</p></div>
+    </div>
+    <div class="column">
+      <div class="content"><p>Three</p></div>
+    </div>
+  </div><!-- .example -->
+
+  <hr class="dotted">
+
+</section><!-- #box-model-demo -->
